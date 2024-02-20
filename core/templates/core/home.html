@@ -2,9 +2,11 @@
 
 {% block title %} Portada {% endblock %}
 
-{% block content %}
-    
-    <h2> Portada </h2>
-    <p> Esto es la portada </p>
+{% block background %}{% load static %}{% static 'core/img/home-bg.jpg'%}{% endblock %}
 
+{% block header %}
+    <h1>Eduardo Colon</h1>
+    <span class="subheading">Ingeniero de Software</span>
 {% endblock %}
+
+{% block content %}{% endblock %}
